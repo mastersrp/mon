@@ -10,6 +10,7 @@ mon: $(OBJ)
 	$(CC) $< $(CFLAGS) -c -o $@
 
 install: mon
+	install -d ${PREFIX}/bin
 	cp -f mon $(PREFIX)/bin/mon
 
 uninstall:
